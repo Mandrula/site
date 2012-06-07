@@ -1,2 +1,57 @@
 @import "compass/reset"
 @import "compass/css3"
+
+/*#----------------------------------------------------------------------------------------------------------------------------------
+//        HTML - BODY - CONTENT - WRAP - CANVAS
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #*/
+
+html, body, #wrap, #canvas
+  height: 100%
+
+body
+  font-family: "Arial Black", Arial, sans-serif
+  margin: 0 !important
+
+.push
+  position: relative
+  clear: both
+  height: 80px
+
+html
+  background: transparent url(/images/texture.jpg) repeat 50% center
+
+#wrap
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin: 0 auto -80px
+  width: 100% !important
+  position: relative
+
+#canvas
+  width: 960px
+  margin: 0 auto 0 auto
+  padding: 30px 0 0 0
+  position: relative
+
+.logo
+  background: url(/images/sprite.png) no-repeat left top
+  width: 670px
+  height: 200px
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-left: -335px
+
+.slogan
+  font-family: Arial, sans-serif
+  font-size: 15px
+  color: #cee4ad
+  position: absolute
+  top: 50%
+  bottom: 50px
+  left: 50%
+  margin-left: 228px
+  margin-top: 70px
+  font-style: italic
+  text-shadow: 4px 4px 5px #000, -4px -4px 5px #000
