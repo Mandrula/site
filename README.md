@@ -1,8 +1,6 @@
 Setup
 =====
 
-
-- Clone repository, enter directory and run ```bundle install```.
-- Start server with ```ruby -rubygems app.rb```
-- Go to ```localhost:4567```
-
+- Clone the repo, cs into the directory and run `bundle install`.
+- Start server with `rackup -s thin`
+- Go to `localhost:9292`

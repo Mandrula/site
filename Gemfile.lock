@@ -1,21 +1,95 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    addressable (2.2.8)
+    ansi (1.4.2)
+    backports (2.6.1)
+    capybara (1.1.2)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      selenium-webdriver (~> 2.0)
+      xpath (~> 0.1.4)
+    childprocess (0.3.2)
+      ffi (~> 1.0.6)
+    chunky_png (1.2.5)
+    compass (0.12.1)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    daemons (1.1.8)
+    eventmachine (0.12.10)
+    faker (1.0.1)
+      i18n (~> 0.4)
+    ffi (1.0.11)
+    fssm (0.2.9)
     haml (3.1.4)
+    i18n (0.6.0)
+    kgio (2.7.4)
+    launchy (2.1.0)
+      addressable (~> 2.2.6)
+    libwebsocket (0.1.3)
+      addressable
+    mime-types (1.18)
+    minitest (3.0.1)
+    multi_json (1.3.6)
+    nokogiri (1.5.3)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
+    rack-test (0.6.1)
+      rack (>= 1.0)
+    raindrops (0.9.0)
+    rubyzip (0.9.8)
     sass (3.1.16)
+    selenium-webdriver (2.22.2)
+      childprocess (>= 0.2.5)
+      ffi (~> 1.0)
+      libwebsocket (~> 0.1.3)
+      multi_json (~> 1.0)
+      rubyzip
     sinatra (1.3.2)
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
       tilt (~> 1.3, >= 1.3.3)
+    sinatra-contrib (1.3.1)
+      backports (>= 2.0)
+      eventmachine
+      rack-protection
+      rack-test
+      sinatra (~> 1.3.0)
+      tilt (~> 1.3)
+    therubyracer-heroku (0.8.1.pre3)
+    thin (1.3.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     tilt (1.3.3)
+    turn (0.9.5)
+      ansi
+    unicorn (4.3.1)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
+    xpath (0.1.4)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  ansi
+  capybara
+  compass
+  faker
   haml
+  launchy
+  minitest
   sass
   sinatra
+  sinatra-contrib
+  therubyracer-heroku
+  thin
+  turn
+  unicorn
