@@ -20,7 +20,7 @@ class Mandrula < Sinatra::Base
   end
 
   # Configure haml.
-  set :haml, :layout => :layout, :format => :html5
+  set :haml, layout: :layout, ugly: true, format: :html5
 
   # Enable Compass Support.
   register Sinatra::CompassSupport
