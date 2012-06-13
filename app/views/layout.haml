@@ -3,14 +3,14 @@
   %head
     %title Mandrula
 
-    != css :application, :media => 'screen'
-    != js  :app
+    = css :application, :media => 'screen'
+    = js  :app
+
+    -# Load the Google Analytics js snippet.
+    = partial :google_analytics
 
     /[if lt IE 9]
       %script(src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript")
-
-    -# Load the Google Analytics js snippet.
-    =# haml :google_analytics
 
   %body
     = yield

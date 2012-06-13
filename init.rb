@@ -42,6 +42,6 @@ class Mandrula < Sinatra::Base
 end
 
 # Require application files.
-['./routes/**/*.rb'].sort.each do |path|
+['./app/helpers/**/*.rb', './app/routes/**/*.rb'].each do |path|
   Dir[path].sort.each { |file| require file }
 end
