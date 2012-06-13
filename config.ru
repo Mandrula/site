@@ -1,6 +1,6 @@
 ENV['RACK_ENV'] ||= 'development'
 
-require "./app.rb"
+require "./init.rb"
 
 Mandrula.set :run, false
 

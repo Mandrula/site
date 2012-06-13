@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %title Mandrula
+
+    != css :application, :media => 'screen'
+    != js  :app
+
+    /[if lt IE 9]
+      %script(src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript")
+
+    -# Load the Google Analytics js snippet.
+    =# haml :google_analytics
+
+  %body
+    = yield
